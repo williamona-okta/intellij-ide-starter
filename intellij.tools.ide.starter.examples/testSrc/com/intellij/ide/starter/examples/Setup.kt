@@ -1,6 +1,7 @@
 package com.intellij.ide.starter.examples
 
 import com.intellij.ide.starter.di.di
+import com.intellij.ide.starter.examples.MonolithSetup.Companion
 import com.intellij.ide.starter.ide.IDETestContext
 import com.intellij.ide.starter.ide.IdeDownloader
 import com.intellij.ide.starter.ide.IdeProductProvider
@@ -42,13 +43,13 @@ class Setup {
     private val LOCAL_PATH = System.getProperty("user.home")
 
     // ----- CONFIGURATION SECTION ----
-    private val PATH_TO_INSTALLED_IDE = "/Applications/IntelliJ IDEA CE.app"
-    const val PROJECT_LOCATION = "/Users/maxim.kolmakov/IdeaProjects/Quantum-Starter-Kit"
-    private val CONFIG_PATH = Paths.get("$LOCAL_PATH/Library/Application Support/JetBrains/IdeaIC2023.3")
+    private val PATH_TO_INSTALLED_IDE = "/Applications/IntelliJ IDEA.app/"
+    const val PROJECT_LOCATION = "/Users/williamona/okta/okta-core"
+    private val CONFIG_PATH = Paths.get("${Setup.LOCAL_PATH}/Library/Application Support/JetBrains/IntelliJIdea2023.3")
     private val PLUGINS_PATH = Paths.get("$CONFIG_PATH/plugins")
 
     //      pick IDE type between "IC" for Community edition and "IU" for Ultimate Edition
-    val IDE_TYPE = IdeProductProvider.IC
+    val IDE_TYPE = IdeProductProvider.IU
 
     /**
      * Sets up the test context by initializing the necessary objects and configurations.

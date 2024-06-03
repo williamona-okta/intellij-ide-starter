@@ -1,6 +1,10 @@
 package com.intellij.ide.starter.examples.junit5
 
 import com.intellij.ide.starter.examples.data.TestCases
+<<<<<<< Updated upstream
+=======
+//import com.intellij.ide.starter.junit5.JUnit5StarterAssistant
+>>>>>>> Stashed changes
 import com.intellij.ide.starter.junit5.hyphenateWithClass
 import com.intellij.ide.starter.runner.CurrentTestMethod
 import com.intellij.ide.starter.runner.Starter
@@ -13,6 +17,10 @@ import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 
+<<<<<<< Updated upstream
+=======
+//@ExtendWith(JUnit5StarterAssistant::class)
+>>>>>>> Stashed changes
 class IdeaJUnit5ExampleTest {
   @Test
   fun openGradleJitPack() {

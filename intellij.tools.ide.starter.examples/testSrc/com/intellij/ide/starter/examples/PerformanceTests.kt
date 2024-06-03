@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test
 import java.nio.file.Path
 import kotlin.io.path.*
 
-@Disabled("Requires local installation of IDE, configs and project")
+//@Disabled("Requires local installation of IDE, configs and project")
 class PerformanceTests {
 
   companion object {
