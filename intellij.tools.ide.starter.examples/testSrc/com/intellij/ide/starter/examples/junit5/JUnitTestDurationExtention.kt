@@ -16,6 +16,7 @@ class TestDurationExtension : BeforeTestExecutionCallback, AfterTestExecutionCal
 
     override fun beforeTestExecution(context: ExtensionContext) {
         context.getStore(namespace).put("startTime", System.currentTimeMillis())
+        createFileIfNotExists(logFilePath)
     }
 
     override fun afterTestExecution(context: ExtensionContext) {
@@ -39,5 +40,22 @@ class TestDurationExtension : BeforeTestExecutionCallback, AfterTestExecutionCal
     private fun getCurrentTime(): String {
         val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
         return dateFormat.format(Date())
+    }
+
+    private fun createFileIfNotExists(filePath: String): Boolean {
+        val file = File(filePath)
+        return try {
+            if (!file.exists()) {
+                // Create parent directories if they don't exist
+                file.parentFile.mkdirs()
+                file.createNewFile()
+            } else {
+                // File already exists
+                false
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            false
+        }
     }
 }

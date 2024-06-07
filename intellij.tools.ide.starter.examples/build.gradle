@@ -31,11 +31,11 @@ repositories {
 }
 
 dependencies {
-  testImplementation 'com.jetbrains.intellij.tools:ide-starter-squashed:LATEST-EAP-SNAPSHOT'
-  testImplementation 'com.jetbrains.intellij.tools:ide-starter-junit5:LATEST-EAP-SNAPSHOT'
-  testImplementation 'com.jetbrains.intellij.tools:ide-metrics-collector:LATEST-EAP-SNAPSHOT'
-  testImplementation 'com.jetbrains.intellij.tools:ide-metrics-collector-starter:LATEST-EAP-SNAPSHOT'
-  testImplementation 'com.jetbrains.intellij.tools:ide-performance-testing-commands:LATEST-EAP-SNAPSHOT'
+  testImplementation 'com.jetbrains.intellij.tools:ide-starter-squashed:241-EAP-SNAPSHOT'
+  testImplementation 'com.jetbrains.intellij.tools:ide-starter-junit5:241-EAP-SNAPSHOT'
+  testImplementation 'com.jetbrains.intellij.tools:ide-metrics-collector:241-EAP-SNAPSHOT'
+  testImplementation 'com.jetbrains.intellij.tools:ide-metrics-collector-starter:241-EAP-SNAPSHOT'
+  testImplementation 'com.jetbrains.intellij.tools:ide-performance-testing-commands:241-EAP-SNAPSHOT'
   testImplementation "org.kodein.di:kodein-di-jvm:7.20.2"
 
   testImplementation 'junit:junit:4.13.2'
